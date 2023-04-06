@@ -1,0 +1,100 @@
+/* poppins font start*/
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Climate+Crisis&family=Kanit:ital,wght@0,700;1,400&family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
+/* poppins font end*/
+
+/* universal designs starts*/
+:root{
+    --transition: all 0.3s ease;
+}
+
+*{
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-weight: 700;
+}
+/* universal designs ends*/
+
+/* header section starts here */
+.nav{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 25rem;
+}
+
+.navigation, .navigation__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navigation__items{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    transition: var(--transition);
+}
+
+.fa-magnifying-glass, .fa-cart-shopping{
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navigation__items:hover,
+.fa-magnifying-glass:hover,
+.fa-cart-shopping:hover {
+    transform: scale(1.2);
+}
+/* header section ends here */
+
+/* intro section starts here */
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__heading{
+    margin-bottom: 1rem;
+}
+
+.fa-arrow-right{
+    color: white;
+}
+
+.intro__btn{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(253, 52, 86);
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.intro__btn:hover{
+    transform: scale(1.2);
+}
+
+.intro__img{
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid rgb(223, 223, 223);
+
+}
+/* intro section ends here */
