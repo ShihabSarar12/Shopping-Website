@@ -32,6 +32,12 @@ section{
     margin-bottom: 5rem;
 }
 
+hr {
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, black));
+}
+
 .center-content{
     display: flex;
     justify-content: center;
@@ -56,7 +62,12 @@ section{
 }
 
 .nav__logo{
-    margin: 0 90px;
+    margin: 0;
+    transform: translate(-13.5rem, 0);
+}
+
+.fa-bars{
+    display: none;
 }
 
 .navigation__items{
@@ -142,13 +153,17 @@ section{
 
 .companies{
     padding: 0.5rem;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .company{
     width: 75px;
     margin: 0;
     transition: var(--transition);
+}
+
+.company__portion{
+    gap: 3rem;
 }
 
 .company:hover{
@@ -301,3 +316,84 @@ footer{
     cursor: pointer;
 }
 /* footer ends here */
+
+/* responsiveness starts here */
+@media only screen and (max-width: 688px){
+    /* nav starts here */
+    .fa-bars{
+        display: block;
+        width: 2rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        margin-left: 1rem;
+        transition: var(--transition);
+    }
+
+    .fa-bars:hover{
+        transform: scale(1.2);
+    }
+
+    .navigation{
+        gap: 0;
+        margin-right: 0;
+    }
+
+    .nav__logo{
+        margin: 0;
+        transform: translate(0, 0);
+    }
+
+    .fa-cart-shopping{
+        width: 1rem;
+    }
+
+    .navigation__items, .fa-magnifying-glass{
+        display: none;
+    }
+    /* nav ends here */
+
+    /* intro starts here */
+    .intro{
+        flex-direction: column-reverse;
+    }
+
+    .intro__img{
+        margin: 2rem;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .companies{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .company__portion{
+        gap: 1.5rem;
+    }
+    /* intro ends here */
+
+    /* popular collection starts here */
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 8rem;
+    }
+
+    .card{
+        transform: scale(1.2);
+    }
+
+    #popular__btn{
+        margin-top: 3rem;
+    }
+    /* popular collection ends here */
+
+    /* featured starts here */
+    .featured{
+        flex-direction: column-reverse;
+    }
+    /* featured starts here */
+}
+/* responsiveness ends here */
