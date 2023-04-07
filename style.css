@@ -320,6 +320,7 @@ footer{
 /* responsiveness starts here */
 @media only screen and (max-width: 688px){
     /* nav starts here */
+
     .fa-bars{
         display: block;
         width: 2rem;
@@ -359,6 +360,16 @@ footer{
 
     .intro__img{
         margin: 2rem;
+        transform: scale(0.8);
+        transition: var(--transition);
+    }
+
+    .intro__img:hover{
+        transform: scale(0.9);
+    }
+
+    .intro__content{
+        transform: scale(0.8);
     }
 
     hr{
@@ -378,21 +389,22 @@ footer{
     /* popular collection starts here */
     .cards{
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 8rem;
+        grid-row-gap: 3rem;
     }
 
-    .card{
-        transform: scale(1.2);
+    #popular__more{
+        margin-right: 2rem;
     }
 
     #popular__btn{
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
     /* popular collection ends here */
 
     /* featured starts here */
     .featured{
         flex-direction: column-reverse;
+        transform: scale(0.8);
     }
     /* featured starts here */
 }
