@@ -8,7 +8,7 @@
 }
 
 *{
-    margin: 0 auto;
+    margin: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -16,12 +16,20 @@ h1{
     font-size: 45px;
 }
 
+h2{
+    font-size: 35px;
+}
+
 h3{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 p{
     font-weight: 700;
+}
+
+section{
+    margin-bottom: 5rem;
 }
 
 .center-content{
@@ -36,8 +44,7 @@ p{
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
-    justify-content: center;
-    gap: 25rem;
+    justify-content: space-between;
 }
 
 .navigation, .navigation__content{
@@ -45,6 +52,7 @@ p{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-right: 90px;
 }
 
 .nav__logo{
@@ -67,12 +75,13 @@ p{
 .fa-magnifying-glass:hover,
 .fa-cart-shopping:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 /* header section ends here */
 
 /* intro section starts here */
 .intro{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .intro__heading{
@@ -97,32 +106,37 @@ p{
 
 .intro__btn:hover{
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 .intro__img{
     padding: 1rem;
+    margin: 0 90px;
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
     border: 1px solid rgb(223, 223, 223);
-    transition: all 0.3s ease;
+    transition: var(--transition);
 }
 
 .intro__img:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 #camera-img{
     z-index: 10;
-    transform: translate(0, -20rem);
+    width: 25rem;
+    transform: translate(-3rem, -2rem);
 }
+
 
 .camera-circle{
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
     background-color: rgb(223, 223, 223);
-    transform: translate(0, 2.5rem);
+    transform: translate(2rem, 2.5rem);
     z-index: -5;
 }
 
@@ -134,9 +148,156 @@ p{
 .company{
     width: 75px;
     margin: 0;
+    transition: var(--transition);
 }
+
+.company:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .company-img{
     width: 75px;
     height: 75px;
 }
 /* intro section ends here */
+
+/* popular collection starts here */
+.popular__container{
+    flex-direction: column;
+}
+
+.popular__heading{
+    margin-bottom: 4rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.card{
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px 10px rgb(223, 223, 223);
+    transition: var(--transition);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card__price{
+    font-weight: 400;
+}
+
+.ratings{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rating{
+    margin: 0 10px 0 0;
+    color: gold;
+}
+
+#popular__more{
+    text-align: end;
+    margin-right: 100px;
+}
+
+#popular__arrow{
+    color: rgb(253, 52, 86);
+}
+
+#popular__btn{
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+    color: rgb(253, 52, 86);
+    transition: var(--transition);
+}
+
+#popular__btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.fa-arrow-right{
+    color: rgb(253, 52, 86);
+}
+/* popular collection ends here */
+
+/* featured starts here */
+.featured{
+    gap: 5rem;
+}
+
+.featured__img{
+    transition: var(--transition);
+}
+
+.featured__img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.featured__heading{
+    margin-bottom: 1rem;
+}
+
+#featured__btn{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    background-color: rgb(253, 52, 86);
+    color: white;
+    padding: 10px 20px;
+    transition: var(--transition);
+}
+
+#featured__btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.fa-arrow-right{
+    color: white;
+}
+/* featured ends here */
+
+/* footer starts here */
+footer{
+    background-color: rgb(1, 1, 43);
+}
+
+.outro{
+    flex-direction: column;
+    color: white;
+    padding: 2rem;
+}
+
+.outro__content{
+    font-weight: 400;
+}
+
+.social-links{
+    margin: 0.5rem 0.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 99);
+    transition: var(--transition);
+}
+
+.social-links:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* footer ends here */

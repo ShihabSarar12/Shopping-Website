@@ -23,12 +23,12 @@
           <a class="navigation__items" href="#">Products</a>
           <a class="navigation__items" href="#">Sign up</a>
           <a class="navigation__items" href="#">Log in</a>
-        </div>
-        <div class="nav__search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="nav__shop">
-          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="nav__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="nav__shop">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
         </div>
       </nav>
     </header>
@@ -45,8 +45,9 @@
             </button>
           </div>
           <div class="intro__img">
-            <div class="camera-circle"></div>
-            <img id="camera-img" src="images/main-camera.png" alt="" />
+            <div class="camera-circle">
+              <img id="camera-img" src="images/main-camera.png" alt="" />
+            </div>
           </div>
         </div>
         <hr />
@@ -77,175 +78,189 @@
       </section>
       <!-- intro section ends here -->
       <!-- popular collection section starts here -->
-      <section>
-        <h3>Popular Collection</h3>
-        <div class="cards">
-          <div class="card">
-            <div class="card__img">
-              <img src="images/tripod.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h3>Flex Tripod</h3>
-              <h4>$100.00</h4>
-              <div class="ratings">
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-                <p></p>
+      <section class="popular">
+        <div class="center-content popular__container">
+          <h2 class="popular__heading">Popular Collection</h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card__img">
+                <img src="images/tripod.png" alt="" />
               </div>
-              <p>
-                Worldwide shifting <br />available<br />Buyers protection
-                possible!
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img src="images/mic.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h3>Microphone</h3>
-              <h4>$100.00</h4>
-              <div class="ratings">
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
+              <div class="card__info">
+                <h3>Flex Tripod</h3>
+                <h3 class="card__price">$100.00</h3>
+                <div class="ratings">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p class="ratings">4.5</p>
                 </div>
-                <p></p>
+                <p class="card__price">
+                  Worldwide shifting <br />available<br />Buyers protection
+                  possible!
+                </p>
               </div>
-              <p>
-                Worldwide shifting <br />available<br />Buyers protection
-                possible!
-              </p>
             </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img src="images/airpod.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h3>Airpods</h3>
-              <h4>$100.00</h4>
-              <div class="ratings">
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="card">
+              <div class="card__img">
+                <img src="images/mic.png" alt="" />
+              </div>
+              <div class="card__info">
+                <h3>Microphone</h3>
+                <h3 class="card__price">$100.00</h3>
+                <div class="ratings">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p class="ratings">4.5</p>
                 </div>
-                <p></p>
+                <p class="card__price">
+                  Worldwide shifting <br />available<br />Buyers protection
+                  possible!
+                </p>
               </div>
-              <p>
-                Worldwide shifting <br />available<br />Buyers protection
-                possible!
-              </p>
             </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img src="images/drone.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h3>Drone</h3>
-              <h4>$100.00</h4>
-              <div class="ratings">
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="card">
+              <div class="card__img">
+                <img src="images/airpod.png" alt="" />
+              </div>
+              <div class="card__info">
+                <h3>Airpods</h3>
+                <h3 class="card__price">$100.00</h3>
+                <div class="ratings">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p class="ratings">4.5</p>
                 </div>
-                <p></p>
+                <p class="card__price">
+                  Worldwide shifting <br />available<br />Buyers protection
+                  possible!
+                </p>
               </div>
-              <p>
-                Worldwide shifting <br />available<br />Buyers protection
-                possible!
-              </p>
             </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img src="images/camera.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h3>Light Setup</h3>
-              <h4>$100.00</h4>
-              <div class="ratings">
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="card">
+              <div class="card__img">
+                <img src="images/drone.png" alt="" />
+              </div>
+              <div class="card__info">
+                <h3>Drone</h3>
+                <h3 class="card__price">$100.00</h3>
+                <div class="ratings">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p class="ratings">4.5</p>
                 </div>
-                <p></p>
+                <p class="card__price">
+                  Worldwide shifting <br />available<br />Buyers protection
+                  possible!
+                </p>
               </div>
-              <p>
-                Worldwide shifting <br />available<br />Buyers protection
-                possible!
-              </p>
             </div>
-          </div>
-          <div class="card">
-            <div class="card__img">
-              <img src="images/action.png" alt="" />
-            </div>
-            <div class="card__info">
-              <h3>Photoshoot Set</h3>
-              <h4>$100.00</h4>
-              <div class="ratings">
-                <div class="rating">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="card">
+              <div class="card__img">
+                <img src="images/camera.png" alt="" />
+              </div>
+              <div class="card__info">
+                <h3>Light Setup</h3>
+                <h3 class="card__price">$100.00</h3>
+                <div class="ratings">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p class="ratings">4.5</p>
                 </div>
-                <p></p>
+                <p class="card__price">
+                  Worldwide shifting <br />available<br />Buyers protection
+                  possible!
+                </p>
               </div>
-              <p>
-                Worldwide shifting <br />available<br />Buyers protection
-                possible!
-              </p>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="images/action.png" alt="" />
+              </div>
+              <div class="card__info">
+                <h3>Photoshoot Set</h3>
+                <h3 class="card__price">$100.00</h3>
+                <div class="ratings">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p class="ratings">4.5</p>
+                </div>
+                <p class="card__price">
+                  Worldwide shifting <br />available<br />Buyers protection
+                  possible!
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <p>See more <i class="fa-solid fa-arrow-right"></i></p>
+        <div id="popular__more">
+          <button id="popular__btn">
+            See more <i id="popular__arrow" class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
       </section>
       <!-- popular collection section ends here -->
       <!-- featured products starts here -->
-      <section class="featured">
+      <section class="featured center-content">
         <div class="featured__img">
           <img src="images/gear.png" alt="" />
         </div>
         <div class="featured__content">
-          <h2>Featured products at one place</h2>
+          <h1 class="featured__heading">Featured products at one place</h1>
           <p>You can get whatever you want right here</p>
-          <button>Join Now <i class="fa-solid fa-arrow-right"></i></button>
+          <button id="featured__btn">
+            Join Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </section>
       <!-- featured products ends here -->
     </main>
-    <footer>
+    <footer class="center-content outro">
       <h3>Influencer products</h3>
-      <p>
-        Copyright &copy; 2020 Influencer products <br />
-        All rights reserved
-      </p>
-      <div class="social">
-        <div class="social-links"><i class="fa-brands fa-instagram"></i></div>
-        <div class="social-links"><i class="fa-solid fa-basketball"></i></div>
-        <div class="social-links"><i class="fa-brands fa-twitter"></i></div>
-        <div class="social-links"><i class="fa-brands fa-youtube"></i></div>
+      <p class="outro__content">Copyright &copy; 2020 Influencer products.</p>
+      <p class="outro__content">All rights reserved</p>
+      <div class="social center-content">
+        <div class="social-links center-content">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="social-links center-content">
+          <i class="fa-solid fa-basketball"></i>
+        </div>
+        <div class="social-links center-content">
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="social-links center-content">
+          <i class="fa-brands fa-youtube"></i>
+        </div>
       </div>
     </footer>
   </body>
