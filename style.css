@@ -23,6 +23,12 @@ h3{
 p{
     font-weight: 700;
 }
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* universal designs ends*/
 
 /* header section starts here */
@@ -39,6 +45,10 @@ p{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.nav__logo{
+    margin: 0 90px;
 }
 
 .navigation__items{
@@ -62,9 +72,7 @@ p{
 
 /* intro section starts here */
 .intro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 3rem;
 }
 
 .intro__heading{
@@ -93,8 +101,42 @@ p{
 
 .intro__img{
     padding: 1rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     border: 1px solid rgb(223, 223, 223);
+    transition: all 0.3s ease;
+}
 
+.intro__img:hover{
+    transform: scale(1.1);
+}
+
+#camera-img{
+    z-index: 10;
+    transform: translate(0, -20rem);
+}
+
+.camera-circle{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: rgb(223, 223, 223);
+    transform: translate(0, 2.5rem);
+    z-index: -5;
+}
+
+.companies{
+    padding: 0.5rem;
+    gap: 5rem;
+}
+
+.company{
+    width: 75px;
+    margin: 0;
+}
+.company-img{
+    width: 75px;
+    height: 75px;
 }
 /* intro section ends here */
